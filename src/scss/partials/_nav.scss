@@ -1,0 +1,43 @@
+/* nav */
+
+.nav-bar
+{
+    @include flex(column, null, center, null, null);
+    width: auto;
+    min-height: 100vh;
+    padding: 3rem 0;
+    border-right: 1px solid $bodyColor2;
+    background-color: $bodyColor;
+
+    picture img
+    {
+        height: 42px;
+        image-rendering: crisp-edges;
+    }
+
+    &__list 
+    {
+        @include flex(column, null, null , 1rem, null);
+        width: 100%;
+        margin: 3rem 0;
+
+        &__item 
+        {
+            width: 100%;
+
+            &__link 
+            {
+                @include flex(row, null, center, 0.8rem, null);
+                padding: 1rem 4.4rem;
+                font-size: 1.2em;
+                font-weight: 400;
+                transition: 0.1s ease-in-out;
+            }
+
+            .active
+            {
+                color: $bodyColor4;
+            }
+        }
+    }
+}
