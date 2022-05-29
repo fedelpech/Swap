@@ -22,7 +22,7 @@ body
 {
     max-width: 100%;
     min-height: 100vh;
-    background-color: $bodyColor1;
+    background-color: null;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
@@ -36,12 +36,12 @@ a
 {
     display: inline-block;
     text-decoration: none;
-    color: $bodyColor3;
+    color: null;
 }
 
 svg 
 {
-    color: none;
+    color: $bodyColor;
 }
 
 input 
@@ -53,7 +53,7 @@ input
     }
 }
 
-.base 
+.layout 
 {
     display: flex;
     max-width: 100%;

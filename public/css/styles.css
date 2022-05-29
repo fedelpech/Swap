@@ -17,7 +17,7 @@ html {
 body {
   max-width: 100%;
   min-height: 100vh;
-  background-color: #232227;
+  background-color: null;
   text-rendering: optimizeLegibility;
   overflow-x: hidden; }
 
@@ -27,54 +27,21 @@ ul {
 a {
   display: inline-block;
   text-decoration: none;
-  color: #fdfdfd; }
+  color: null; }
 
 svg {
-  color: none; }
+  color: #231F1F; }
 
 input {
   font-family: null; }
   input::-webkit-search-decoration {
     display: none; }
 
-.base {
+.layout {
   display: flex;
   max-width: 100%;
   height: auto; }
 
 /* mixins */
 /* partials */
-/* nav */
-.nav-bar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-  min-height: 100vh;
-  padding: 3rem 0;
-  border-right: 1px solid #333135;
-  background-color: #2f2e31; }
-  .nav-bar picture img {
-    height: 42px;
-    image-rendering: crisp-edges; }
-  .nav-bar__list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    margin: 3rem 0; }
-    .nav-bar__list__item {
-      width: 100%; }
-      .nav-bar__list__item__link {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.8rem;
-        padding: 1rem 4.4rem;
-        font-size: 1.2em;
-        font-weight: 400;
-        transition: 0.1s ease-in-out; }
-      .nav-bar__list__item .active {
-        color: linear-gradient(to right, #ff626d, #fcad72); }
-
 /* views */
